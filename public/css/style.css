@@ -9,6 +9,7 @@ body {
     background: linear-gradient(135deg, #fef3c7, #fed7aa);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #1e2a44;
@@ -148,7 +149,8 @@ header {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
+    width: 80%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -241,6 +243,7 @@ header nav a:last-child:hover {
 
 .video-card {
     background: linear-gradient(145deg, #ffffff, #fff7ed);
+    max-width: 100%;
     border-radius: 16px;
     padding: 24px;
     margin-bottom: 40px;
