@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #fef3c7, #fed7aa);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e2a44;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.login-card h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+    outline: none;
+}
+
+.form-group .error {
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-options label {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.form-options a {
+    font-size: 14px;
+    color: #f97316;
+    text-decoration: none;
+}
+
+.form-options a:hover {
+    color: #ea580c;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #f97316, #fb923c);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(249, 115, 22, 0.3);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.register-link a {
+    color: #f97316;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    color: #ea580c;
+}
+
+/* welcome section styles */
+
+header {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #f97316;
+}
+
+header h1 span {
+    margin-right: 8px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    font-size: 16px;
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f97316;
+}
+
+header nav a:last-child {
+    background: linear-gradient(90deg, #f97316, #fb923c);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+header nav a:last-child:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(249, 115, 22, 0.3);
+}
+
+.hero {
+    background: url('https://source.unsplash.com/random/1920x400/?community') no-repeat center center/cover;
+    padding: 120px 20px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 80px;
+}
+
+.hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: linear-gradient(90deg, #f97316, #fb923c);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(249, 115, 22, 0.3);
+}
+
+.main-content {
+    padding: 40px 0;
+}
+
+.video-card {
+    background: linear-gradient(145deg, #ffffff, #fff7ed);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 40px;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+    border-color: #f97316;
+}
+
+.video-card h3, .section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #1e2a44;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.video-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video-card input, .video-card textarea {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.video-card input[type="file"] {
+    padding: 8px;
+    background: #fff7ed;
+    border: none;
+}
+
+.video-card input:focus, .video-card textarea:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+    outline: none;
+}
+
+.video-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.video-header h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #1e2a44;
+}
+
+.video-header span {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.video-meta {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+video {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+.video-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: #fff7ed;
+    color: #f97316;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.like-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #fef3c7, #fed7aa);
+}
+
+.comments {
+    margin-top: 24px;
+}
+
+.comments h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #1e2a44;
+    margin-bottom: 16px;
+}
+
+.comment {
+    background: #f9fafb;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.comment-header strong {
+    font-size: 14px;
+    color: #1e2a44;
+}
+
+.comment-header span {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.comment p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.comment-form {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.comment-form input {
+    flex: 1;
+}
+
+.guest-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #6b7280;
+}
+
+.guest-message a {
+    color: #f97316;
+    text-decoration: none;
+}
+
+.guest-message a:hover {
+    color: #ea580c;
+}
+
+.no-videos {
+    text-align: center;
+    font-size: 16px;
+    color: #6b7280;
+    padding: 20px;
+}
+
+footer {
+    background: linear-gradient(180deg, #1e2a44, #0f172a);
+    color: #f1f5f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+@media (max-width: 640px) {
+    .hero {
+        padding: 80px 20px;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    video {
+        max-height: 300px;
+    }
+    .video-card {
+        padding: 16px;
+    }
+}
